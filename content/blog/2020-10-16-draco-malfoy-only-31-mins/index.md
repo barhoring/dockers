@@ -1,17 +1,96 @@
 ---
-title: Draco Malfoy Only Had 31 Minutes Of Screen-Time In The 'Harry Potter' Films
+title: Barrrr!
 date: "2020-10-16"
 template: post
 ---
 
-Almost 20 years after Harry Potter's big-screen debut, fans of the hit franchise might assume they're pretty well versed in the films inspired by J.K. Rowling's fantasy novel series. However, news that would surprise even the most ardent Potterhead recently came to light when it was revealed Draco Malfoy had only 31 minutes of screen-time in all eight Harry Potter films.
+![alt text](NeoKnowsDocker.jpeg "Title")
 
-The mind-blowing revelation was unearthed following a recent viral tweet, and a quick scan of the official Harry Potter IMDB page confirms that Tom Felton's character does indeed have just over half an hour of screen-time throughout all 19 hours and 40 minutes of the eight films.
+```ruby
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
 
-"[T]he fact Draco Malfoy was only in 31 minutes throughout the WHOLE of the Harry Potter franchise (19 hrs & 40 mins) jus doesn’t sit right with me," one Twitter user commented.
+## Why container?
 
-As Tyla reports, Malfoy's longest appearance can be enjoyed in Harry Potter & the Half Blood Prince, during which the Slytherin bad boy appears for a grand total of eight minutes. In contrast, the character's shortest amount of screen-time sits at one minute and 15 seconds in the fifth instalment of the Potter franchise, Order Of The Phoenix.
+containers is another level of indirection between us and code.
+It saves
+Containarized applications are lighter
 
-However, lack of screen-time for supporting characters is not uncommon throughout the Potter adaptations. The menacing Lord Voldemort, for instance, appears for a total of 37 minutes and 15 seconds, while fan-favourite Rubeus Hagrid stuck around for just over 45 minutes.
+let's dive in:
 
-Predictably, the film's core cast were awarded a far greater amount of on-screen exposure throughout all eight films, with Ron Weasley and Hermione Granger appearing for around three and a half hours each, and the main man himself, Harry Potter, enjoyed almost nine hours of screen-time in total, Tyla reports.
+```bash
+docker run -it alpine:3.12
+```
+
+This will drop you into a Alpine ash shell inside of a container as the root user of that container.
+
+-it means interactively so you can run commands and inspect the container.
+
+r. By default containers run and then exit as soon as they're done.
+
+1.
+
+```bash
+gatsby-nice-blog on  main [!?] is 📦 v0.1.0 via ⬢ v14.18.0
+➜ docker run -it alpine:3.12
+/ # cat /etc/issue
+Welcome to Alpine Linux 3.12
+Kernel \r on an \m (\l)
+
+/ # whoami
+root
+```
+
+As you might expect, since Docker Hub is Docker’s official registry, it is the default registry when you install Docker. It hosts over 100,000 images including official images for MongoDB, nginx, Apache, Ubuntu, and MySQL that have all been downloaded over a billion times each.
+
+### Why this doesn't work
+
+```bash
+
+docker run -it alpine:3.12 cat /etc/issue
+```
+
+```bash
+
+gatsby-nice-blog on  main [!?] is 📦 v0.1.0 via ⬢ v14.18.0 took 2m 22s
+➜ docker run --detach -it ubuntu:bionic
+
+7b8d2feca1db5245fa82a356a12efb8e3cf764061bddfa89168f8cca969c1d30
+
+CONTAINER ID   IMAGE           COMMAND   CREATED              STATUS              PORTS     NAMES
+7b8d2feca1db   ubuntu:bionic   "bash"    About a minute ago   Up About a minute             festive_cohen
+
+
+```
+
+Let's dive deeper
+
+```bash
+
+docker exec -it 7b8d2feca1db bash
+root@7b8d2feca1db:/# cat /etc/issue
+Ubuntu 18.04.5 LTS \n \l
+```
+
+This let's us interact with the container on a new interactive terminal, and once we close, the container continues to run
+
+```bash
+gatsby-nice-blog on  main [!?] is 📦 v0.1.0 via ⬢ v14.18.0
+➜ docker ps
+CONTAINER ID   IMAGE           COMMAND   CREATED             STATUS             PORTS     NAMES
+7b8d2feca1db   ubuntu:bionic   "bash"    About an hour ago   Up About an hour             festive_cohen
+
+gatsby-nice-blog on  main [!?] is 📦 v0.1.0 via ⬢ v14.18.0
+➜ docker kill festive_cohen # or 7b8d2feca1db
+festive_cohen
+
+gatsby-nice-blog on  main [!?] is 📦 v0.1.0 via ⬢ v14.18.0
+➜ docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+
+gatsby-nice-blog on  main [!?] is 📦 v0.1.0 via ⬢ v14.18.0
+➜
+
+```

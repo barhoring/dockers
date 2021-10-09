@@ -1,13 +1,13 @@
-'use strict';
+"use strict"
 
 module.exports = {
   url: `https://abhaynikam.github.io/gatsby-nice-blog/`,
   description: `A nice starter blog post boilerplate template built using Gatsby.`,
-  pathPrefix: '/',
-  title: `Nice Blogs`,
-  disqusShortname: '',
+  pathPrefix: "/",
+  title: `Dockers & friends`,
+  disqusShortname: "",
   postsPerPage: 15,
-  googleAnalyticsId: '',
+  googleAnalyticsId: "",
   useKatex: false,
   author: {
     name: `Abhay Nikam`,
@@ -20,5 +20,5 @@ module.exports = {
       facebook: ``,
       instagram: ``,
     },
-  }
-};
+  },
+}

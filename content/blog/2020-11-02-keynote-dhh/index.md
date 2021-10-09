@@ -1,4 +1,5 @@
 ---
+title: Why are we doing the lecture?
 title: Keynote Interview with David Heinemeier Hansson
 date: "2020-11-02"
 template: post
