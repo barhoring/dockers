@@ -1,16 +1,8 @@
 ---
-title: Dive deeper with node
+title: Harry Potter Fans Have Some Thoughts After Learning How Much Screen Time Draco Malfoy Actually Gets
 date: "2020-10-18"
 template: post
 ---
-
-gatsby-nice-blog on  main [⇡!?] is 📦 v0.1.0 via ⬢ v14.18.0
-➜ docker run -it node:12-stretch
-
-Welcome to Node.js v12.22.6.
-Type ".help" for more information.
-
->
 
 Nunc cursus dolor ut ipsum porttitor pretium. Sed posuere, eros sodales finibus varius, velit urna porttitor turpis, vel ultricies nibh ipsum vel neque. Duis maximus ligula sed est euismod molestie. Nullam id feugiat dui. In interdum cursus ligula, ac fermentum eros fringilla ac. Sed mollis turpis eu urna venenatis lacinia. Sed vel diam turpis. Morbi ut turpis vel tellus dapibus pellentesque. Sed sed tellus risus. Aenean neque lorem, tristique at magna in, porttitor porta turpis.
 
@@ -25,6 +17,7 @@ Pellentesque nisl arcu, ornare ac tincidunt quis, mollis ut risus. Aliquam moles
 Morbi eu elit eget quam suscipit finibus. Praesent condimentum congue justo vel auctor. Donec quis arcu est. Aenean posuere mi eros, at egestas odio aliquet sit amet. Sed quis libero suscipit, accumsan lorem vel, placerat augue. Duis vel condimentum nulla. Aenean eget metus et nisl vulputate vehicula. Cras ac consectetur diam, vel lacinia enim.
 
 ![Chinese Salty Egg](./xps.jpg)
+
 
 Donec sed purus vehicula, posuere arcu ut, ornare purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In placerat nisi ante, tempor aliquet mi porta sed. Morbi vehicula egestas sem, in aliquet leo tristique non. Praesent venenatis nisi vulputate turpis rutrum, sed scelerisque dui aliquam. Cras feugiat nunc quis odio suscipit ullamcorper. Vestibulum condimentum tincidunt commodo. Mauris vestibulum suscipit pellentesque. Duis ut lacus et sapien suscipit consectetur vel a sapien. Suspendisse ullamcorper felis arcu, sed porttitor ligula pulvinar vel. Maecenas porta lobortis ipsum, in luctus nulla.
 

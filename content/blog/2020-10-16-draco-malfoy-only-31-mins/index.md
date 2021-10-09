@@ -94,3 +94,39 @@ gatsby-nice-blog on  main [!?] is 📦 v0.1.0 via ⬢ v14.18.0
 ➜
 
 ```
+
+### Name and --rm
+
+We can name
+docker run -dit --name my-cool-ubuntu ubuntu:stretch
+
+```bash
+gatsby-nice-blog on  main [⇡!] is 📦 v0.1.0 via ⬢ v14.18.0 took 3s
+➜ docker run -dit --name my-cool-ubuntu ubuntu:bionic
+
+cfc84a32d20a23a308fddea4ded1ce03c24529c1d33d97ca8bcc011cbf7b7b7a
+
+gatsby-nice-blog on  main [⇡!] is 📦 v0.1.0 via ⬢ v14.18.0
+➜ docker ps
+CONTAINER ID   IMAGE           COMMAND   CREATED         STATUS         PORTS     NAMES
+cfc84a32d20a   ubuntu:bionic   "bash"    4 seconds ago   Up 3 seconds             my-cool-ubuntu
+
+```
+
+do
+
+```bash
+
+docker ps -a
+docker run --rm -dit --name my-ubuntu ubuntu:bionic
+docker ps -a
+
+```
+
+from now on we will use these alot
+
+```bash
+
+docker run --rm -dit --name my-ubuntu ubuntu:bionic
+
+```

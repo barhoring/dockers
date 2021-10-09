@@ -6,5 +6,7 @@ template: post
 
 ```bash
 docker kill $(docker ps -q)
+docker ps -a --format "{{.Names}}"
+docker
 
 ```
