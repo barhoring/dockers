@@ -1,5 +1,5 @@
 ---
-title: cool commands
+title: Cool Commands
 date: "2020-10-18"
 template: post
 ---

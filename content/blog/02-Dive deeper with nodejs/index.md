@@ -1,5 +1,5 @@
 ---
-title: Dive deeper with node
+title: Dive deeper with nodejs
 date: "2020-10-18"
 template: post
 ---
@@ -34,8 +34,10 @@ CMD ["node", "-e", "console.log(\"hi lol\")"]
 
 ```bash
 
+
+docker build -t my-node-app .
 ~/dev/docker-dry-run on 🐳 v20.10.8 took 3s
-➜ docker run -it my-node-app
+➜ docker run -it --rm my-node-app
 hi the time is: 1633775777135
 
 ~/dev/docker-dry-run on 🐳 v20.10.8
